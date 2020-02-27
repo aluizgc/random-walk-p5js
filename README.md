@@ -6,6 +6,7 @@
   <a href="https://github.com/aluizgc/random-walk-p5js">
     <img src="rndwlk.gif" width="400">
   </a>
+  
 ### For more information on the random walk, please [see this page](https://en.wikipedia.org/wiki/Random_walk).
 
 ## To execute the random walk, just copy & paste the code from the sketch.js into the p5.js editor and run it.
