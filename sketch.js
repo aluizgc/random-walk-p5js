@@ -3,6 +3,10 @@ let walkedB = []
 let r = 102
 let g = 0;
 let b = 102;
+let x = 600; 
+let y = 600;
+let pa = 0;
+let pb = 0;
 
 function setup() {
   createCanvas(x, y);
@@ -10,12 +14,23 @@ function setup() {
 
 }
 
+function randomWalk(){
+  let r = random(1);
+  if (r >= 0.5){
+    return 1
+  }else{
+    return -1
+  }
+  
+  
+}
+
 function draw() {
   strokeWeight(15);
   stroke(204, 0, 0);
   background(220);
-  pa += random(-1, 1) * 15;
-  pb += random(-1, 1) * 15;
+  pa += randomWalk()*5;
+  pb += randomWalk()*5;
   walkedA.push(pa);
   walkedB.push(pb);
   point(pa, pb);
